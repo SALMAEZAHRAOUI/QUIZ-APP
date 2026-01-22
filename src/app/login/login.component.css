@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  font-size:30px;
+}
+
+.navbar .logo {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar .menu ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .menu ul li a {
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar .menu ul li a:hover {
+  color: #ffcb05;
+}
+
+.robot-speech {
+
+  padding: 50px;
+  border-radius: 10px;
+  text-align: left; /* Change le texte pour qu'il soit aligné à gauche */
+  margin: 20px 0; /* Supprime l'auto-centrage */
+  max-width: 500px; /* Réduit la largeur pour mieux s'adapter */
+ 
+  animation: fadeIn 3s  infinite alternate;
+  color: #fff;
+  /* Nouvelle mise en page */
+  float: left; /* Aligne le div à gauche */
+  margin-left: 20px; /* Ajoute un espacement sur la gauche */
+}
+
+
+.robot-speech p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.robot-speech button {
+  padding: 10px 20px;
+
+  color: rgb(24, 12, 12);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:  0.3s;
+}
+
+.robot-speech button:hover {
+ background-color: #ffcb05;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  0% {
+    transform: translateY(70px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* About Section */
+.about-container {
+  margin: 500px auto;
+  padding: 20px;
+
+  text-align: center;
+  background-color: #f9fafc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Background */
+.main {
+  background-image: url('../back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}

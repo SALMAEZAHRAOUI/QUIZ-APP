@@ -1,0 +1,16 @@
+<div #motivationCard class="motivation-card">
+  <div class="motivation-card-content">
+    <p class="quiz-status">You have completed the quiz. 🎉</p>
+    <p class="score-display">Your score: {{ score }} 🏆</p>
+
+    <div class="motivation-message">
+      <h2 *ngIf="score >= 80">Excellent! You're a quiz master! 👑</h2>
+      <h2 *ngIf="score >= 50 && score < 80">Great job! Keep it up! 💪</h2>
+      <h2 *ngIf="score < 50">Don't worry! You're improving with every try! 😔</h2>
+    </div>
+
+    <div class="button-group">
+      <button mat-button (click)="downloadCard()" class="download-btn">Download 📥</button>
+    </div>
+  </div>
+</div>

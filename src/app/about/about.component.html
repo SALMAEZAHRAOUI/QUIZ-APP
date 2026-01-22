@@ -1,0 +1,22 @@
+<div id="about" class="about-container">
+    <h1>About Us</h1>
+    <p>Here are some statistics for our Quiz App:</p>
+  
+    <p>Number of users using various quiz categories:</p>
+    <div style="display: block;">
+    <canvas baseChart
+            [datasets]="[{ data: doughnutChartData }]" 
+            [labels]="doughnutChartLabels"
+            [options]="chartOptions"
+            [legend]="chartLegend"
+            >
+    </canvas>
+  </div>
+ 
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide an engaging and fun learning experience through various quiz categories. We believe quizzes can be an effective way to test your knowledge and have fun at the same time.</p>
+  </section>
+
+
+  

@@ -1,0 +1,60 @@
+<div class="page-layout">
+  <!-- Top Navigation Bar -->
+  <header class="top-bar">
+    <div class="logo">
+      <span class="website-name">Quiz App</span>
+    </div>
+  </header>
+
+  <!-- Left Side Menu -->
+  <aside class="side-menu">
+    <ul class="menu-list">
+      <li class="menu-item"><a routerLink="/secret"><i class="fas fa-house-user"></i> Home</a></li>
+      <li class="menu-item"><a routerLink="/app-pagegame"><i class="fas fa-puzzle-piece"></i> Games</a></li>
+      <li class="menu-item"><a routerLink="/learnLanguage"><i class="fa fa-robot" aria-hidden="true"></i> Chatbot</a></li>
+      <li class="menu-item"><a routerLink="/login"><i class="fas fa-sign-out-alt"></i> Quit</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Chatbot Container -->
+  <div class="chatbot-container">
+    <!-- Chatbot Header -->
+    <div class="chatbot-header">
+      <i class="fa fa-robot" aria-hidden="true"></i>
+      <p class="greeting-text">
+        Hello! Welcome to the Quiz App. Here, you can test your language skills (French, English...)
+        and scientific subjects like Mathematics and more.
+      </p>
+    </div>
+
+    <!-- Conversation Display -->
+    <div class="conversation">
+      <div *ngFor="let message of conversationMessages; let i = index">
+        <!-- Bot Message -->
+        <div *ngIf="message.startsWith('AI:')" class="message bot-message">
+          <span class="message-text">{{ message.replace('AI: ', '') }}</span>
+        </div>
+        <!-- User Message -->
+        <div *ngIf="message.startsWith('User:')" class="message user-message">
+          <span class="message-text">{{ message.replace('User: ', '') }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="text-input-container">
+      <input
+        [(ngModel)]="userInput"
+        type="text"
+        placeholder="Type your message..."
+        (keyup.enter)="sendMessage()"
+      />
+      <div class="send-icon" (click)="sendMessage()">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+      </div>
+      <div class="mic-icon" (click)="startRecognition()">
+        <i class="fa fa-microphone" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</div>

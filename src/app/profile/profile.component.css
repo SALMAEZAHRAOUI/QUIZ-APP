@@ -1,0 +1,119 @@
+body {  
+    font-family: 'Poppins', sans-serif;  
+    background-color: #f5f5f5;  
+    margin: 0;  
+}  
+
+.settings-container {  
+    max-width: 1000px;  
+    margin: 20px auto;  
+    padding: 20px;  
+    background-color: #fff;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}  
+
+.title {  
+    text-align: center;  
+    margin-bottom: 30px;  
+    font-size: 24px;  
+}  
+
+.settings-wrapper {  
+    display: flex;  
+    gap: 20px;  
+    flex-wrap: wrap;  
+}  
+
+.settings-sidebar {  
+    width: 250px;  
+    background-color: #e6e6e6;  
+    padding: 20px;  
+    border-radius: 8px;  
+}  
+
+.settings-nav {  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+}  
+
+.settings-nav li {  
+    margin-bottom: 10px;  
+}  
+
+.settings-nav a {  
+    display: flex;  
+    align-items: center;  
+    padding: 12px;  
+    border-radius: 6px;  
+    color: #333;  
+    font-weight: 500;  
+    text-decoration: none;  
+    transition: all 0.3s ease;  
+}  
+
+.settings-nav a:hover, .settings-nav a.active {  
+    background-color: #007bff;  
+    color: white;  
+}  
+
+.settings-content {  
+    flex: 1;  
+    background-color: #fff;  
+    border-radius: 8px;  
+    padding: 20px;  
+}  
+
+.card {  
+    background-color: #f8f9fa;  
+    padding: 20px;  
+    border-radius: 8px;  
+    border: none;  
+}  
+
+.card-header {  
+    font-size: 18px;  
+    font-weight: bold;  
+    margin-bottom: 15px;  
+}  
+
+.form-group {  
+    margin-bottom: 15px;  
+}  
+
+.form-group input {  
+    width: 100%;  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+    border-radius: 6px;  
+}  
+
+.action-buttons {  
+    text-align: right;  
+    margin-top: 20px;  
+}  
+
+.btn {  
+    padding: 10px 20px;  
+    border-radius: 6px;  
+    border: none;  
+    cursor: pointer;  
+}  
+
+.save-btn {  
+    background-color: #28a745;  
+    color: white;  
+}  
+
+.cancel-btn {  
+    background-color: #dc3545;  
+    color: white;  
+}  
+
+.profile-picture img {  
+    width: 80px;  
+    height: 80px;  
+    border-radius: 50%;  
+    margin-right: 15px;  
+}  

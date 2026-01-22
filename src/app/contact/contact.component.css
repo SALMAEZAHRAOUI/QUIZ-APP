@@ -1,0 +1,213 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: linear-gradient(145deg, #0a1128, #001f54);
+   font-family: 'Poppins', sans-serif;
+   color: #fff;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#section-wrapper {
+   width: 100%;
+   padding: 20px;
+}
+
+.box-wrapper {
+   position: relative;
+   display: flex;
+   width: 90%;
+   max-width: 1100px;
+   margin: auto;
+   margin-top: 35px;
+   border-radius: 30px;
+   background: #1a2336;
+   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5), -15px -15px 30px rgba(255, 255, 255, 0.05);
+   overflow: hidden;
+}
+
+/* Information Section */
+.info-wrap {
+   flex: 1;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background: linear-gradient(145deg, #2b3549, #3e4d6e);
+   color: #fff;
+   border-radius: 30px 0 0 30px;
+   box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3), inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.info-title {
+   text-align: left;
+   font-size: 28px;
+   letter-spacing: 1px;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+
+.info-sub-title {
+   font-size: 18px;
+   font-weight: 300;
+   margin-top: 10px;
+   line-height: 1.8;
+}
+
+.info-details {
+   list-style: none;
+   margin-top: 30px;
+}
+
+.info-details li {
+   margin: 20px 0;
+   font-size: 18px;
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   padding: 10px 0;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-details li:last-child {
+   border: none;
+}
+
+.info-details li i {
+   background: #3e4d6e;
+   padding: 12px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.info-details li a {
+   color: #fff;
+   text-decoration: none;
+   transition: color 0.3s;
+}
+
+.info-details li a:hover {
+   color: #a8d8ff;
+}
+
+.social-icons {
+   list-style: none;
+   margin: 20px 0;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+}
+
+.social-icons li i {
+   background: #6c7b95;
+   color: #fff;
+   padding: 15px;
+   font-size: 20px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: transform 0.3s, background 0.5s;
+}
+
+.social-icons li i:hover {
+   transform: scale(1.2);
+   background: #a8d8ff;
+}
+
+/* Form Section */
+.form-wrap {
+   flex: 1.5;
+   padding: 40px;
+   background: #ecf0f3;
+   border-radius: 0 30px 30px 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.form-title {
+   text-align: left;
+   margin-bottom: 20px;
+   font-size: 28px;
+   letter-spacing: 0.5px;
+   color: #2f3b52;
+   font-weight: bold;
+}
+
+.form-fields {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.form-fields input,
+.form-fields textarea {
+   border: none;
+   outline: none;
+   font-size: 16px;
+   padding: 15px;
+   background: #f1f5f9;
+   border-radius: 12px;
+   box-shadow: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
+   transition: all 0.3s ease;
+}
+
+.form-fields input:focus,
+.form-fields textarea:focus {
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px -4px 8px rgba(255, 255, 255, 0.4);
+   background: #e9eff5;
+}
+
+.form-fields textarea {
+   height: 150px;
+   resize: none;
+}
+
+.submit-button {
+   margin-top: 20px;
+   padding: 15px;
+   font-size: 18px;
+   font-weight: bold;
+   color: #fff;
+   border: none;
+   border-radius: 30px;
+   background: linear-gradient(145deg, #4a5b76, #5c6b8a);
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.submit-button:hover {
+   background: linear-gradient(145deg, #a8d8ff, #6c8ec4);
+   transform: translateY(-2px);
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 767px) {
+   .box-wrapper {
+       flex-direction: column;
+   }
+
+   .info-wrap,
+   .form-wrap {
+       flex: unset;
+       width: 100%;
+       border-radius: 0;
+   }
+
+   .info-wrap {
+       border-radius: 30px 30px 0 0;
+   }
+
+   .form-wrap {
+       border-radius: 0 0 30px 30px;
+   }
+}
