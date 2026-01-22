@@ -55,6 +55,8 @@ Cette application permet aux utilisateurs de :
 <img width="1349" height="592" alt="image" src="https://github.com/user-attachments/assets/5d687255-91ee-4198-b7ab-3eb6f96093cf" />
 
 <img width="1320" height="603" alt="image" src="https://github.com/user-attachments/assets/81a2cb35-8cb5-4597-b8cc-4bbc6a74f464" />
+<img width="997" height="474" alt="image" src="https://github.com/user-attachments/assets/41ff68b5-3bc0-4b26-82c5-ce5b8665016f" />
+<img width="940" height="582" alt="image" src="https://github.com/user-attachments/assets/4cb4b644-6e7c-4dcb-bf0a-34024078435b" />
 
 Lien LinkedIn (présentation du projet)
 
